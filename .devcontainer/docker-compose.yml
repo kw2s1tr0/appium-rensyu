@@ -1,0 +1,16 @@
+name: appium
+services:
+  java:
+    build:
+      context: ./java
+      dockerfile: Dockerfile
+    volumes:
+      - type: bind
+        source: ../
+        target: /appium
+      - type: volume
+        source: gradle-appium
+        target: /root/.gradle
+    tty: true
+volumes:
+  gradle-appium:

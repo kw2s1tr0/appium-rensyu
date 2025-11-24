@@ -1,0 +1,17 @@
+{
+    "name": "devcontainer",
+    "dockerComposeFile": [
+        "docker-compose.yml"
+    ],
+    "service": "java",
+    "workspaceFolder": "/appium",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "vscjava.vscode-java-pack",
+                "vscjava.vscode-gradle",
+                "vscjava.vscode-lombok"
+            ]
+        }
+    }
+}
